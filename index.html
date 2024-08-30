@@ -19,7 +19,7 @@
     <main>
       <div class="title">Password generator</div>
       <div class="container">
-        <div class="output">
+        <div class="output" data-filled="false">
           <p class="output_text">P4$5W0rD!</p>
           <svg width="21" height="24" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -33,7 +33,7 @@
             <p>Character Lenght</p>
             <span class="slider_output"></span>
           </div>
-          <input type="range" min="4" max="20" />
+          <input type="range" min="0" max="20" />
           <div class="checkbox" data-value="uppercase" data-checked="false">
             <div class="check">
               <svg width="14" height="12" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +73,7 @@
             </div>
             <p>Include Numbers</p>
           </div>
-          <div class="checkbox" data-value="symbol" data_checked="false">
+          <div class="checkbox" data-value="symbol" data-checked="false">
             <div class="check">
               <svg width="14" height="12" xmlns="http://www.w3.org/2000/svg">
                 <path
