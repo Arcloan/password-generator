@@ -44,6 +44,7 @@ body {
     display: flex;
     padding: 0.75rem 1.5rem;
     justify-content: space-between;
+    align-items: center;
     max-inline-size: 60ch;
     margin-inline: auto;
     margin-block-end: 1em;
@@ -60,6 +61,17 @@ body {
     font-size: 1.5rem;
 }
 
+.copy_icon {
+    display: flex;
+    gap: 0.5rem;
+    color: var(--green);
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
 .card {
     padding: 1.5em;
     max-inline-size: 60ch;
@@ -74,10 +86,12 @@ body {
 .character_count {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .slider_output {
     color: var(--green);
+    font-size: 1.5rem;
 }
 
 .checkbox {
@@ -111,11 +125,13 @@ body {
     padding: 1em 1.5em;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: black;
 }
 
 .output_strenght {
     display: flex;
+    align-items: center;
     gap: 0.5rem;
 }
 
@@ -144,6 +160,27 @@ button:hover {
 
 button:hover svg path {
     fill: var(--green);
+}
+
+.error {
+    font-size: 0.8rem;
+    color: var(--red);
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.red {
+    background-color: var(--red);
 }
 
 /*********** Baseline, reset styles ***********/
