@@ -97,7 +97,8 @@ function clearRects() {
         el.classList.remove("yellow");
         el.classList.remove("orange");
         el.classList.remove("red");
-    })
+    });
+    outputPassword.parentNode.dataset.filled = "false";
 }
 
 function generatePassword() {
@@ -163,6 +164,7 @@ function generatePassword() {
 
     outputPassword.textContent = ans;
     updateStrenght(calculateStrenght(keys.length, Number(n_chars)));
+    outputPassword.parentNode.dataset.filled = "true";
 }
 
 let generate = document.querySelector("button");

@@ -57,6 +57,10 @@ body {
     cursor: pointer;
 }
 
+.output[data-filled="true"] p {
+    color: var(--white);
+}
+
 .output_text {
     font-size: 1.5rem;
 }
